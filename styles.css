@@ -141,7 +141,7 @@ main section p, main section li, footer p{
     margin-top: 3rem;
 }
 
-#offerings div{
+.offer-grid div{
     background-color: var(--olive-green);
     margin: 1rem auto 0;
     padding: 1rem 0.75rem;
@@ -157,11 +157,11 @@ main section p, main section li, footer p{
 }
 
 #offerings div li{
-    list-style-type:disc;
+    list-style-type: disc;
     list-style-position: inside;
 }
 
-#gallery div{
+.gallery-grid div{
     background-color: var(--soft-white);
     margin: 1rem auto;
     border-radius: 5px; 
@@ -175,7 +175,7 @@ main section p, main section li, footer p{
     display: block;
 }
 
-#gallery div p{
+.gallery-grid div p{
     text-align: center;
     padding: 0.5rem;
     font-style: italic;
@@ -215,14 +215,18 @@ footer a{
         max-width: 900px;
     }
 
-    #offer-grid{
+    header img{
+        width: 30%;
+    }
+
+    .offer-grid{
         margin-top: 1rem;
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 1rem;
     }
 
-    #offer-grid div{
+    .offer-grid div{
         display: block;
         margin-top: 0;
         
@@ -233,18 +237,18 @@ footer a{
         width: 100%;
     }
 
-    #gallery-grid{
+    .gallery-grid{
         margin-top: 1rem;
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 1rem;
     }
 
-    #gallery-grid div{
+    .gallery-grid div{
         margin: 0;
     }
 
-    #gallery a{
+    .gallery a{
         margin-top: 1rem;
     }
 }
@@ -254,7 +258,11 @@ footer a{
         max-width: 100%
     }
 
-    #gallery-grid{
+    header img{
+        width: 20%;
+    }
+
+    .gallery-grid{
         grid-template-columns: 1fr 1fr 1fr;
     }
 }
@@ -265,12 +273,16 @@ footer a{
         background-color: var(--soft-white);
     }
 
+    header img{
+        width: 10%;
+    }
+
     main{
         max-width: 900px;
         margin: auto;
     }
 
-    #gallery-grid{
+    .gallery-grid{
         display: flex;
     }
 }
